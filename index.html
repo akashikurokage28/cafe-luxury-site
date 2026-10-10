@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Hearth &amp; Bean | Coffee House</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="bar" id="bar">
+      <nav class="wrap">
+        <div class="l">
+          <a href="#about">Story</a><a href="#menu">Menu</a
+          ><a href="#gallery">Gallery</a>
+        </div>
+        <a class="logo" href="#top">Hearth <i>&amp;</i> Bean</a>
+        <div class="r">
+          <a class="hide" href="#visit">Visit</a
+          ><a class="btn sm" href="#reserve"
+            ><i class="ri-calendar-event-line"></i>Reserve</a
+          >
+        </div>
+      </nav>
+    </header>
+    <canvas id="glitter" aria-hidden="true"></canvas>
+
+    <section class="hero" id="top" style="padding-top: 120px">
+      <img class="bgimg" src="images/hero-counter.png" alt="" />
+      <div class="veil"></div>
+      <div class="hc">
+        <p class="eyebrow c">Specialty Coffee House</p>
+        <h1>Where every cup<br />is an <em>occasion</em></h1>
+        <p class="lead">
+          Small-batch roasts, pastries baked before sunrise, and a table kept
+          for you after dark.
+        </p>
+        <div class="cta">
+          <a class="btn" href="#reserve"
+            ><i class="ri-calendar-event-line"></i>Reserve a table</a
+          ><a class="btn ghost" href="#menu"
+            ><i class="ri-cup-line"></i>Explore the menu</a
+          >
+        </div>
+        <a class="cue" href="#about" aria-label="Scroll to our story"
+          ><i class="ri-arrow-down-s-line"></i
+        ></a>
+      </div>
+      <div class="hbar">
+        <span><i class="ri-time-line"></i>Open daily 7 AM to 8 PM</span
+        ><span><i class="ri-fire-line"></i>Roasted in-house</span
+        ><span><i class="ri-group-line"></i>28 seats</span>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap two about">
+        <div class="frame rv">
+          <img
+            src="images/cafe-interior-brick.png"
+            alt="Booth seating along a brick wall"
+            loading="lazy"
+          />
+        </div>
+        <div class="rv" style="--d: 150ms">
+          <p class="eyebrow">Our story</p>
+          <h2>A quiet room for <em>slow</em> coffee</h2>
+          <p>
+            Hearth &amp; Bean began as a four-table roastery. We kept the warm
+            lighting, the unhurried pace and the habit of knowing your order.
+            Come for a single espresso, or stay the evening.
+          </p>
+          <div class="stats">
+            <div><i class="ri-fire-line"></i><b>100%</b>Roasted in-house</div>
+            <div><i class="ri-cake-3-line"></i><b>6 am</b>Daily bakes</div>
+            <div><i class="ri-group-line"></i><b>28</b>Seats</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt" id="menu">
+      <div class="wrap">
+        <div class="mhead">
+          <div class="rv">
+            <p class="eyebrow">The menu</p>
+            <h2>Crafted <em>daily</em></h2>
+          </div>
+          <div
+            class="tabs rv"
+            id="tabs"
+            role="group"
+            aria-label="Menu categories"
+          ></div>
+        </div>
+        <div class="mgrid" id="mgrid"></div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="wrap gh">
+        <div class="rv">
+          <p class="eyebrow">Gallery</p>
+          <h2>Inside the <em>house</em></h2>
+        </div>
+        <div class="arrows">
+          <button id="gp" aria-label="Previous photo">
+            <i class="ri-arrow-left-line"></i></button
+          ><button id="gn" aria-label="Next photo">
+            <i class="ri-arrow-right-line"></i>
+          </button>
+        </div>
+      </div>
+      <div class="strip" id="strip"></div>
+    </section>
+
+    <section class="alt" id="reviews">
+      <div class="wrap rev rv">
+        <p class="eyebrow c">Guests say</p>
+        <i class="ri-double-quotes-l qi g"></i>
+        <div class="slides" id="slides"></div>
+        <div class="dots" id="dots"></div>
+      </div>
+    </section>
+
+    <section id="reserve">
+      <div class="wrap book">
+        <div class="info rv">
+          <p class="eyebrow">Reservations</p>
+          <h2>Your table <em>awaits</em></h2>
+          <p style="margin-top: 20px">
+            Choose a date, a time and your party size. You'll receive a booking
+            code to view or cancel your reservation at any time.
+          </p>
+          <table class="hrs">
+            <tr>
+              <td>Monday to Friday</td>
+              <td>7:00 am to 8:00 pm</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>8:00 am to 9:00 pm</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>8:00 am to 6:00 pm</td>
+            </tr>
+          </table>
+        </div>
+        <div class="panel rv" style="--d: 150ms">
+          <div class="ptabs" role="tablist">
+            <button role="tab" id="t1" aria-selected="true">
+              <i class="ri-calendar-event-line"></i>Book a table</button
+            ><button role="tab" id="t2" aria-selected="false">
+              <i class="ri-ticket-2-line"></i>My reservations
+            </button>
+          </div>
+          <div id="pbook">
+            <div class="r2">
+              <div>
+                <label for="name"><i class="ri-user-line"></i>Name</label
+                ><input id="name" autocomplete="name" />
+              </div>
+              <div>
+                <label for="phone"><i class="ri-phone-line"></i>Phone</label
+                ><input id="phone" type="tel" autocomplete="tel" />
+              </div>
+            </div>
+            <div class="r2">
+              <div>
+                <label for="date"><i class="ri-calendar-line"></i>Date</label
+                ><input id="date" type="date" />
+              </div>
+              <div>
+                <label for="guests"><i class="ri-group-line"></i>Guests</label
+                ><select id="guests"></select>
+              </div>
+            </div>
+            <label for="area"><i class="ri-store-2-line"></i>Seating</label
+            ><select id="area">
+              <option>Indoor</option>
+              <option>Garden</option>
+              <option>Hearth corner</option>
+            </select>
+            <label id="tl"><i class="ri-time-line"></i>Time</label>
+            <div class="slots" id="slots" aria-labelledby="tl"></div>
+            <label for="notes"
+              ><i class="ri-edit-line"></i>Notes (optional)</label
+            ><textarea
+              id="notes"
+              rows="2"
+              placeholder="Occasion, high chair, allergies..."
+            ></textarea>
+            <p class="err" id="err" role="alert"></p>
+            <button class="btn" id="book">
+              <i class="ri-calendar-check-line"></i>Confirm reservation
+            </button>
+          </div>
+          <div id="pfind" hidden>
+            <div
+              class="r2"
+              style="grid-template-columns: 1fr auto; align-items: end"
+            >
+              <div>
+                <label for="q"
+                  ><i class="ri-ticket-2-line"></i>Booking code or phone</label
+                ><input id="q" placeholder="e.g. HB-4K7Q" />
+              </div>
+              <button class="btn" id="find" style="width: auto; margin: 0">
+                <i class="ri-search-line"></i>Find
+              </button>
+            </div>
+            <div id="results"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt" id="visit">
+      <div class="wrap visit">
+        <div class="rv">
+          <h3><i class="ri-map-pin-2-line"></i>Location</h3>
+          <p>123 Sample Street<br />Your City, Philippines</p>
+        </div>
+        <div class="rv" style="--d: 100ms">
+          <h3><i class="ri-phone-line"></i>Contact</h3>
+          <p>hello@hearthandbean.example<br />(000) 000-0000</p>
+        </div>
+        <div class="rv" style="--d: 200ms">
+          <h3><i class="ri-car-line"></i>Parking</h3>
+          <p>Street parking and a small lot behind the cafe.</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="soc">
+        <a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a
+        ><a href="#" aria-label="Facebook"
+          ><i class="ri-facebook-circle-line"></i></a
+        ><a href="#" aria-label="TikTok"><i class="ri-tiktok-line"></i></a>
+      </div>
+      &copy; Hearth &amp; Bean Coffee House
+    </footer>
+
+    <dialog id="ok">
+      <i class="ri-checkbox-circle-line ok-i"></i>
+      <p class="eyebrow c">Confirmed</p>
+      <h3 style="font-size: 2rem">You're booked</h3>
+      <p id="oktxt" style="margin: 12px 0 0"></p>
+      <div class="code" id="okcode"></div>
+      <p style="color: var(--mu); font-size: 0.9rem; margin: 0">
+        Save this code to view or cancel your reservation.
+      </p>
+      <button class="btn" id="close">Done</button>
+    </dialog>
+
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/glitter.js"></script>
+  </body>
+</html>

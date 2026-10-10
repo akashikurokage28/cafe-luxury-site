@@ -1,0 +1,171 @@
+{
+  "currency": "₱",
+  "categories": [
+    "Coffee",
+    "Non-coffee",
+    "Bakes",
+    "Brunch"
+  ],
+  "items": [
+    {
+      "id": "hearth-latte",
+      "category": "Coffee",
+      "name": "Hearth Latte",
+      "description": "Espresso, steamed milk, brown sugar and cinnamon",
+      "price": 165,
+      "image": "images/hearth-latte.png",
+      "badge": "House favorite",
+      "available": true
+    },
+    {
+      "id": "espresso",
+      "category": "Coffee",
+      "name": "Espresso",
+      "description": "Double shot, Sagada medium roast",
+      "price": 110,
+      "image": "images/espresso.png",
+      "badge": "",
+      "available": true
+    },
+    {
+      "id": "cortado",
+      "category": "Coffee",
+      "name": "Cortado",
+      "description": "Equal parts espresso and warm milk",
+      "price": 150,
+      "image": "images/cortado.png",
+      "badge": "",
+      "available": true
+    },
+    {
+      "id": "pour-over",
+      "category": "Coffee",
+      "name": "Pour-over",
+      "description": "Benguet beans, brewed to order",
+      "price": 190,
+      "image": "images/pour-over.png",
+      "badge": "",
+      "available": true
+    },
+    {
+      "id": "iced-spanish-latte",
+      "category": "Coffee",
+      "name": "Iced Spanish Latte",
+      "description": "Condensed milk, espresso, cold milk",
+      "price": 175,
+      "image": "images/iced-spanish-latte.png",
+      "badge": "Iced",
+      "available": true
+    },
+    {
+      "id": "hot-chocolate",
+      "category": "Non-coffee",
+      "name": "Hot Chocolate",
+      "description": "Dark cocoa, whipped cream",
+      "price": 160,
+      "image": "images/hot-chocolate.png",
+      "badge": "",
+      "available": true
+    },
+    {
+      "id": "matcha-latte",
+      "category": "Non-coffee",
+      "name": "Matcha Latte",
+      "description": "Ceremonial matcha, steamed milk",
+      "price": 170,
+      "image": "images/matcha-latte.png",
+      "badge": "",
+      "available": true
+    },
+    {
+      "id": "chai",
+      "category": "Non-coffee",
+      "name": "Chai",
+      "description": "Spiced black tea, milk",
+      "price": 150,
+      "image": "images/chai.png",
+      "badge": "",
+      "available": true
+    },
+    {
+      "id": "calamansi-cooler",
+      "category": "Non-coffee",
+      "name": "Calamansi Cooler",
+      "description": "Fresh calamansi, honey, soda",
+      "price": 130,
+      "image": "images/calamansi-cooler.png",
+      "badge": "Iced",
+      "available": true
+    },
+    {
+      "id": "banana-bread",
+      "category": "Bakes",
+      "name": "Banana Bread",
+      "description": "Warm, with salted butter",
+      "price": 120,
+      "image": "images/banana-bread.png",
+      "badge": "Baked daily",
+      "available": true
+    },
+    {
+      "id": "butter-croissant",
+      "category": "Bakes",
+      "name": "Butter Croissant",
+      "description": "Baked every morning",
+      "price": 110,
+      "image": "images/butter-croissant.png",
+      "badge": "",
+      "available": true
+    },
+    {
+      "id": "ensaymada",
+      "category": "Bakes",
+      "name": "Ensaymada",
+      "description": "Soft brioche, cheese, sugar",
+      "price": 95,
+      "image": "images/ensaymada.png",
+      "badge": "",
+      "available": true
+    },
+    {
+      "id": "oat-cookie",
+      "category": "Bakes",
+      "name": "Oat Cookie",
+      "description": "Chewy, with dark chocolate",
+      "price": 80,
+      "image": "images/oat-cookie.png",
+      "badge": "",
+      "available": true
+    },
+    {
+      "id": "garlic-rice-plate",
+      "category": "Brunch",
+      "name": "Garlic Rice Plate",
+      "description": "Longganisa, fried egg, tomato",
+      "price": 260,
+      "image": "images/garlic-rice-plate.png",
+      "badge": "",
+      "available": true
+    },
+    {
+      "id": "avocado-toast",
+      "category": "Brunch",
+      "name": "Avocado Toast",
+      "description": "Sourdough, chili flakes, poached egg",
+      "price": 240,
+      "image": "images/avocado-toast.png",
+      "badge": "",
+      "available": true
+    },
+    {
+      "id": "tuna-melt",
+      "category": "Brunch",
+      "name": "Tuna Melt",
+      "description": "Grilled sandwich with side salad",
+      "price": 250,
+      "image": "images/tuna-melt.png",
+      "badge": "",
+      "available": true
+    }
+  ]
+}
